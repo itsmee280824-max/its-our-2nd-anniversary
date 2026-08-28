@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gurjot ♡ Abhay — Two Years</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:#f7eef0; background:#0d080b;
+  font-family:Montserrat,sans-serif; font-weight:300;
+  overflow-x:hidden;
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.18;
+  background:radial-gradient(circle at 20% 20%, #8f5264 0 1px, transparent 1.5px),
+             radial-gradient(circle at 80% 70%, #c69aa7 0 1px, transparent 1.5px);
+  background-size:90px 90px,130px 130px;
+}
+section{
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+  padding:70px 22px; position:relative;
+}
+.card{max-width:760px;text-align:center;position:relative;z-index:2}
+.eyebrow{letter-spacing:6px;text-transform:uppercase;font-size:11px;opacity:.65}
+.names{font-family:"Cormorant Garamond",serif;font-size:clamp(64px,15vw,130px);font-weight:400;line-height:.85;margin:24px 0}
+.amp{font-size:.45em;font-style:italic;opacity:.65}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:400}
+h1{font-size:clamp(45px,9vw,78px);margin:20px 0 10px}
+h2{font-size:clamp(38px,7vw,58px);margin:10px 0 24px}
+.lead{font-size:14px;letter-spacing:2px;line-height:2;opacity:.75}
+button{
+  margin-top:35px;padding:15px 30px;border:1px solid #8f6570;border-radius:40px;
+  color:#fff;background:rgba(255,255,255,.04);font:500 11px Montserrat;
+  letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.3s;
+}
+button:hover{background:#7b4658;transform:translateY(-2px)}
+.scroll{position:absolute;bottom:25px;font-size:10px;letter-spacing:3px;opacity:.4}
+.message{
+  font-family:"Cormorant Garamond",serif;font-size:clamp(23px,4vw,31px);
+  line-height:1.65;color:#f3dfe5;
+}
+.message em{color:#c99aa8}
+.divider{width:55px;height:1px;background:#8f6570;margin:28px auto}
+.stats{display:flex;justify-content:center;gap:70px;margin:35px 0}
+.stat strong{display:block;font-family:"Cormorant Garamond";font-size:55px;font-weight:400}
+.stat span{font-size:9px;letter-spacing:2px;text-transform:uppercase;opacity:.5}
+.quote{font-family:"Cormorant Garamond";font-size:34px;line-height:1.35;font-style:italic}
+.final .names{font-size:clamp(54px,12vw,100px)}
+.heart{font-size:34px;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.reveal{opacity:0;transform:translateY(25px);transition:1s ease}
+.reveal.show{opacity:1;transform:none}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.float{position:absolute;bottom:-30px;opacity:0;animation:rise 7s linear forwards}
+@keyframes rise{
+  0%{transform:translateY(0) rotate(0);opacity:0}
+  15%{opacity:.35}100%{transform:translateY(-110vh) rotate(25deg);opacity:0}
+}
+@media(max-width:600px){.stats{gap:35px}.stat strong{font-size:43px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+
+<section>
+  <div class="card reveal">
+    <div class="eyebrow">a little something for</div>
+    <div class="names">Gurjot <span class="amp">♡</span> Abhay</div>
+    <h1>Happy 2nd Anniversary</h1>
+    <p class="lead">two years of us · and a forever still to come</p>
+    <button onclick="document.querySelector('#letter').scrollIntoView()">Open My Heart ♡</button>
+  </div>
+  <div class="scroll">SCROLL GENTLY ↓</div>
+</section>
+
+<section id="letter">
+  <div class="card reveal">
+    <div class="eyebrow">my letter to you</div>
+    <h2>Dear Abhay,</h2>
+    <div class="divider"></div>
+    <p class="message">
+      Two years.<br><br>
+      It may sound like just a number, but to me, it is <em>730 days of us</em> —
+      all the laughter, little arguments, silly moments, comfort, and memories
+      that made these two years ours.
+      <br><br>
+      Thank you for being the person I can laugh with, lean on, annoy,
+      and love a little more every day.
+      <br><br>
+      If I could go back to the beginning and choose all over again,
+      <em>I would still choose you.</em>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card reveal">
+    <div class="eyebrow">our little number</div>
+    <div class="stats">
+      <div class="stat"><strong>2</strong><span>Years</span></div>
+      <div class="stat"><strong>730</strong><span>Days</span></div>
+      <div class="stat"><strong>∞</strong><span>To Go</span></div>
+    </div>
+    <div class="divider"></div>
+    <p class="quote">“Somehow, in a world full of people,<br>my heart found its favourite one.”</p>
+  </div>
+</section>
+
+<section>
+  <div class="card reveal">
+    <div class="eyebrow">and one more thing</div>
+    <h2>You are still my favourite.</h2>
+    <p class="message">
+      Not just on the good days.<br>
+      Not just when everything is perfect.<br>
+      <em>Every day.</em>
+    </p>
+    <div class="heart">♡</div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="card reveal">
+    <div class="eyebrow">two years completed</div>
+    <div class="names">Gurjot <span class="amp">♡</span> Abhay</div>
+    <p class="lead">forever loading...</p>
+    <h1>Happy Anniversary, my love.</h1>
+    <p class="lead">Here’s to us. Today, tomorrow, and all the years after. ♾️</p>
+  </div>
+</section>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')});
+},{threshold:.18});
+reveals.forEach(r=>observer.observe(r));
+
+function heart(){
+  const h=document.createElement('div');
+  h.className='float';
+  h.textContent=Math.random()>.5?'♡':'✦';
+  h.style.left=Math.random()*100+'%';
+  h.style.fontSize=(12+Math.random()*16)+'px';
+  h.style.animationDuration=(5+Math.random()*5)+'s';
+  document.getElementById('hearts').appendChild(h);
+  setTimeout(()=>h.remove(),10000);
+}
+setInterval(heart,900);
+</script>
+</body>
+</html>
